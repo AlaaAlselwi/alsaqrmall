@@ -138,6 +138,45 @@ require_once __DIR__ . '/../../includes/db.php';
             </div>
         </div>
     </nav>
+
+    <!-- قائمة الموبايل (Mobile Menu) -->
+    <div id="mobile-menu" class="fixed inset-0 z-40 bg-brand-dark/95 backdrop-blur-xl transform translate-x-full transition-transform duration-300 md:hidden flex flex-col justify-center items-center space-y-8">
+        <button id="close-menu" class="absolute top-6 left-6 text-white text-3xl">
+            <i class="fas fa-times"></i>
+        </button>
+        
+        <a href="index.php" class="text-2xl font-bold text-white hover:text-brand-gold transition-colors">الرئيسية</a>
+        
+        <?php if(isset($_SESSION['user_id'])): ?>
+            <a href="profile.php" class="text-2xl font-bold text-white hover:text-brand-gold transition-colors">الملف الشخصي</a>
+            <a href="cart.php" class="text-2xl font-bold text-white hover:text-brand-gold transition-colors">
+                السلة 
+                <?php if($cart_count > 0): ?>
+                    <span class="bg-brand-gold text-brand-dark text-sm px-2 py-1 rounded-full ml-2"><?php echo $cart_count; ?></span>
+                <?php endif; ?>
+            </a>
+            <a href="../logout.php" class="text-xl text-red-400 border border-red-400/30 px-6 py-2 rounded-full hover:bg-red-400/10 transition-colors">تسجيل الخروج</a>
+        <?php else: ?>
+            <a href="../login.php" class="text-2xl font-bold text-brand-gold border-2 border-brand-gold px-8 py-2 rounded-full hover:bg-brand-gold hover:text-brand-dark transition-colors">تسجيل الدخول</a>
+            <a href="../register.php" class="text-xl text-slate-300">إنشاء حساب</a>
+        <?php endif; ?>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button.md\\:hidden');
+        const menu = document.getElementById('mobile-menu');
+        const closeBtn = document.getElementById('close-menu');
+
+        if(btn && menu && closeBtn) {
+            btn.addEventListener('click', () => {
+                menu.classList.remove('translate-x-full');
+            });
+
+            closeBtn.addEventListener('click', () => {
+                menu.classList.add('translate-x-full');
+            });
+        }
+    </script>
     
     <!-- مسافة عشان الناف بار المثبت ما يغطي المحتوى -->
     <div class="h-20"></div>
