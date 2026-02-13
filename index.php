@@ -89,7 +89,7 @@
                 </span>
             </div>
 
-            <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="text-4xl md:text-7xl font-black mb-6 leading-tight" data-aos="fade-up" data-aos-delay="100">
                 مرحباً بك في عالم <br>
                 <span class="text-gradient">الفخامة الرقمية</span>
             </h1>
