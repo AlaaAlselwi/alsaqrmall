@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الصقر مول |  للمستقبل</title>
+    <title>الصقر مول | بوابتك للمستقبل</title>
     
     <!-- خط تجوال -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -119,7 +119,7 @@
 
             <!-- زر تصفح كزائر (مهم جداً لعدم خسارة الزبائن) -->
             <div class="mt-8" data-aos="fade-up" data-aos-delay="400">
-                <a href="home.php" class="text-slate-500 hover:text-white transition-colors text-sm flex items-center gap-2 group">
+                <a href="customer/index.php" class="text-slate-500 hover:text-white transition-colors text-sm flex items-center gap-2 group">
                     <span>أريد التصفح كزائر فقط</span>
                     <i class="fas fa-arrow-left group-hover:-translate-x-1 transition-transform"></i>
                 </a>
