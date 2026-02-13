@@ -129,7 +129,7 @@
 
         <!-- الفوتر: حقوق الملكية -->
         <footer class="text-center text-slate-600 text-sm" data-aos="fade-up" data-aos-offset="0">
-            &copy; 2024 الصقر مول. جميع الحقوق محفوظة.
+            &copy; 2026 الصقر مول. جميع الحقوق محفوظة.
         </footer>
 
         <!-- عناصر جمالية عائمة في الخلفية -->
