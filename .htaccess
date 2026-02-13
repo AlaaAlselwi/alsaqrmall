@@ -1,0 +1,10 @@
+# Error Documents
+ErrorDocument 404 /alsaqrmall/404.php
+ErrorDocument 403 /alsaqrmall/403.php
+ErrorDocument 500 /alsaqrmall/500.php
+
+# Prevent listing directories
+Options -Indexes
+
+# Enable Rewrite Engine (if needed later)
+RewriteEngine On
